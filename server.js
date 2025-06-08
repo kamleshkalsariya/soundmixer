@@ -9,7 +9,7 @@ app.get('/auth/callback', (req, res) => {
   }
 
   // Redirect to your app with the code using custom scheme
-  const redirectURL = `myapp://auth?code=${encodeURIComponent(code)}`;
+  const redirectURL = `soundmixer://auth?code=${encodeURIComponent(code)}`;
   res.redirect(redirectURL);
 });
 
